@@ -1,0 +1,7 @@
+{
+  "global": {},
+  "target": [
+    { "host": "192.168.137.82", "user": "pi", "password": "raspiberry" }
+  ],
+  "fileList": [{ "fileName": "test.py" }]
+}
