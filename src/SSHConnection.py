@@ -3,12 +3,12 @@ Description:
 
 Author: Cheng Shu
 Date: 2021-03-31 21:56:40
-LastEditTime: 2021-04-01 00:09:59
+LastEditTime: 2021-04-01 00:22:22
 LastEditors: Cheng Shu
-FilePath: \deploy-raspbian\src\SSHConnection.py
 @Copyright © 2020 Cheng Shu
 License: MIT License
 """
+
 
 import paramiko
 from Setting import TIMEOUT, HOST, USER, PASSWORD
