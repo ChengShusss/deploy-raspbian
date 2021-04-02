@@ -95,14 +95,20 @@ class SFTPConnection:
             #raise 
         fileList, dirList = self.getList(srcPath)
 
+        print("[DIR CHECK]")
         for dirName in dirList:
             try:
                 self.sftp.listdir(dirName)
             except FileNotFoundError:
+                print(f"  mkdir {dirName}")
                 self.sftp.mkdir(dirName)
 
+        print("[Copy file]")
         for fileName in fileList:
+            print(f"  copy file: {fileName}")
             self.sftp.put(srcPath + fileName, fileName)
+        
+        print(f"Deploy [{name}] finished.")
 
   
 

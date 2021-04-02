@@ -13,6 +13,7 @@ TIMEOUT = 3.0
 
 # Test Setting
 
-HOST = '192.168.0.115'
+HOST = '192.168.137.82'
+# HOST = '192.168.137.82'
 USER = 'pi'
 PASSWORD = 'raspberry'
